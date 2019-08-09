@@ -1,1 +1,0 @@
-# pawelkochowicz.github.io
