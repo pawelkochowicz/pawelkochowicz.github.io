@@ -1,40 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
-    <meta name="description" content="Description" />
 
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>P.Kochowicz portfolio</title>
+  <meta name="description" content="Description" />
 
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <!-- Title -->
+  <meta property="og:title" content="" />
+  <!-- OPTIONAL description. 2-4 sentences. -->
+  <meta property="og:description" content="" />
+  <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+  <meta property="og:url" content="" />
+  <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+  <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <h1>Hello world - with simple PWA support!</h1>
+  <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
 
-    <script src="js/main.js"></script>
-  </body>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <header class="header">
+    <img src="#" alt="Paweł Kochowicz-author">
+    <h1 class="header-title">Hey there! 👋 My name is Paweł and I’m an aspiring Frontend developer and an offroad
+      hothead
+      :) </h1>
+    <p class="header__description">You might be interested in checking the list of <span>my skills</span>. Don’t forget
+      to have a glimpse at <span>my projects</span>. Currently I’m looking for a new challenges so if you have one -
+      <span>contact me</span> 😊</p>
+    <p class="header-contact"><a href="mailto:pawel.kochowicz@gmail.com">pawel.kochowicz@gmail.com</a></p>
+  </header>
+  <main class="main">
+    <article class="mySkills">
+      <h2 class="mySkills__header">My skills</h2>
+      <section class="know">
+        <h3 class="know__title">Working knowledge</h3>
+        <ul class="know__list">
+          <li class="know__item">Semantic HTML5</li>
+          <li class="know__item">Flexbox</li>
+          <li class="know__item">Markdown</li>
+          <li class="know__item">JS: Local storage</li>
+          <li class="know__item">Figma</li>
+          <li class="know__item">CSS Grid</li>
+          <li class="know__item">Forms</li>
+          <li class="know__item">JS: DOM manipulations</li>
+          <li class="know__item">SASS</li>
+        </ul>
+      </section>
+      <section class="knowSomething">
+        <h3 class="knowSomething__title">Know something about</h3>
+        <ul class="knowSomething__list">
+          <li class="knowSomething__item">JavaScript ES6 + features</li>
+          <li class="knowSomething__item">CSS animations</li>
+          <li class="knowSomething__item">Working with API</li>
+          <li class="knowSomething__item">NPM scripts</li>
+          <li class="knowSomething__item">Progressive web apps</li>
+          <li class="knowSomething__item">Git</li>
+          <li class="knowSomething__item">Accessiility</li>
+        </ul>
+      </section>
+      <section class="wontKnow">
+        <h3 class="wontKnow__title">Want to learn</h3>
+        <ul class="wontKnow__list">
+          <li class="wontKnow__item">React JS</li>
+          <li class="wontKnow__item">Node.JS</li>
+          <li class="wontKnow__item">Electron</li>
+          <li class="wontKnow__item">Server side rendering</li>
+          <li class="wontKnow__item">Typescript</li>
+          <li class="wontKnow__item">Gatsby</li>
+          <li class="wontKnow__item">Websockets</li>
+        </ul>
+      </section>
+    </article>
+    <article class="projects">
+      <h2 class="projects__header">Recent projects</h2>
+      <p class="projects__description">I started my frontend developer path in 2019. Since then, I’ve built some
+        projects.
+        Here’s the list of the things I’ve done so far.</p>
+      <section class="project">
+        <img class="project__logo" src="#" alt="#">
+        <h4 class="project__title">Title</h4>
+        <p class="project__description">Project Description</p>
+        <footer class="project__footer">
+          <img class="demo__logo" src="#" alt="#">
+          <button class="demo">Demo</button>
+          <img class="github__logo" src="#" alt="#">
+          <button class="github">Github</button>
+        </footer>
+      </section>
+      <section class="project">
+        <img class="project__logo" src="#" alt="#">
+        <h4 class="project__title">Title</h4>
+        <p class="project__description">Project Description</p>
+        <footer class="project__footer">
+          <img class="demo__logo" src="#" alt="#">
+          <button class="demo">Demo</button>
+          <img class="github__logo" src="#" alt="#">
+          <button class="github">Github</button>
+        </footer>
+      </section>
+      <section class="project">
+        <img class="project__logo" src="#" alt="#">
+        <h4 class="project__title">Title</h4>
+        <p class="project__description">Project Description</p>
+        <footer class="project__footer">
+          <img class="demo__logo" src="#" alt="#">
+          <button class="demo">Demo</button>
+          <img class="github__logo" src="#" alt="#">
+          <button class="github">Github</button>
+        </footer>
+      </section>
+      <section class="project">
+        <img class="project__logo" src="#" alt="#">
+        <h4 class="project__title">Title</h4>
+        <p class="project__description">Project Description</p>
+        <footer class="project__footer">
+          <img class="demo__logo" src="#" alt="#">
+          <button class="demo">Demo</button>
+          <img class="github__logo" src="#" alt="#">
+          <button class="github">Github</button>
+        </footer>
+      </section>
+      <section class="project">
+        <img class="project__logo" src="#" alt="#">
+        <h4 class="project__title">Title</h4>
+        <p class="project__description">Project Description</p>
+        <footer class="project__footer">
+          <img class="demo__logo" src="#" alt="#">
+          <button class="demo">Demo</button>
+          <img class="github__logo" src="#" alt="#">
+          <button class="github">Github</button>
+        </footer>
+      </section>
+      <section class="project">
+        <img class="project__logo" src="#" alt="#">
+        <h4 class="project__title">Title</h4>
+        <p class="project__description">Project Description</p>
+        <footer class="project__footer">
+          <img class="demo__logo" src="#" alt="#">
+          <button class="demo">Demo</button>
+          <img class="github__logo" src="#" alt="#">
+          <button class="github">Github</button>
+        </footer>
+      </section>
+    </article>
+  </main>
+  <footer class="footer">
+    <h3 class="contact">Contact Me</h3>
+    <p class="footer__description">I’m open for new opportunities. If you have one for me we should talk!</p>
+    <a href="https://www.facebook.com/pawel.kochowicz"><img class="facebook-logo" src="#" alt="facebook"></a>
+    <a href="https://github.com/pawelkochowicz"><img class="github-logo" src="#" alt="github"></a>
+    <a href="#"><img class="linkedin-logo" src="#" alt="linked-in"></a>
+    <a href="mailto:pawel.kochowicz@gmail.com">pawel.kochowicz@gmail.com</a>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
