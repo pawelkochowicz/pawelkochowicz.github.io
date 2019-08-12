@@ -49,10 +49,17 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 
-.projects {
+.list {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
+.projects__header {
+  grid-column: 1/2;
+}
 
+.projects__description {
+  grid-column: 1/2;
+
+}
 
