@@ -29,16 +29,20 @@
 <body>
   <header class="header">
     <img class="header__photo" src="assets/img/dsc_1377.jpg" alt="Paweł Kochowicz-author">
-    <h1 class="header-title">Hey there! 👋 My name is Paweł and I’m an aspiring Frontend developer and an offroad
+    <p class="header__name">Paweł Kochowicz</p>
+    <h1 class="header__title">Hey there! 👋 My name is Paweł and I’m an aspiring Frontend developer and an offroad
       hothead
       :) </h1>
-    <p class="header__description">You might be interested in checking the list of <span>my skills</span>. Don’t forget
-      to have a glimpse at <span>my projects</span>. Currently I’m looking for a new challenges so if you have one -
-      <span>contact me</span> 😊</p>
-    <p class="header-contact"><a href="mailto:pawel.kochowicz@gmail.com">pawel.kochowicz@gmail.com</a></p>
+    <p class="header__description">You might be interested in checking the list of <span><a class="header__description--nav"
+          href="#mySkills"> my skills</a></span>. Don’t forget
+      to have a glimpse at <span ><a class="header__description--nav" href="#projects"> my projects</a></span>. Currently I’m looking
+      for a new challenges so if you have one -
+      <span><a class="header__description--nav" href="#footer"> contact me</a></span> 😊</p>
+    <p class="header-contact"><a class="header__mail"
+        href="mailto:pawel.kochowicz@gmail.com">pawel.kochowicz@gmail.com</a></p>
   </header>
   <main class="main">
-    <article class="mySkills">
+    <article class="mySkills" id="mySkills">
       <h2 class="mySkills__header">My skills</h2>
       <section class="know">
         <h3 class="know__title">Working knowledge</h3>
@@ -79,80 +83,82 @@
         </ul>
       </section>
     </article>
-    <article class="projects">
+    <article class="projects" id="projects">
       <h2 class="projects__header">Recent projects</h2>
       <p class="projects__description">I started my frontend developer path in 2019. Since then, I’ve built some
         projects.
         Here’s the list of the things I’ve done so far.</p>
-      <section class="project">
-        <img class="project__logo" src="#" alt="#">
-        <h4 class="project__title">Title</h4>
-        <p class="project__description">Project Description</p>
-        <footer class="project__footer">
-          <img class="demo__logo" src="#" alt="#">
-          <button class="demo">Demo</button>
-          <img class="github__logo" src="#" alt="#">
-          <button class="github">Github</button>
-        </footer>
-      </section>
-      <section class="project">
-        <img class="project__logo" src="#" alt="#">
-        <h4 class="project__title">Title</h4>
-        <p class="project__description">Project Description</p>
-        <footer class="project__footer">
-          <img class="demo__logo" src="#" alt="#">
-          <button class="demo">Demo</button>
-          <img class="github__logo" src="#" alt="#">
-          <button class="github">Github</button>
-        </footer>
-      </section>
-      <section class="project">
-        <img class="project__logo" src="#" alt="#">
-        <h4 class="project__title">Title</h4>
-        <p class="project__description">Project Description</p>
-        <footer class="project__footer">
-          <img class="demo__logo" src="#" alt="#">
-          <button class="demo">Demo</button>
-          <img class="github__logo" src="#" alt="#">
-          <button class="github">Github</button>
-        </footer>
-      </section>
-      <section class="project">
-        <img class="project__logo" src="#" alt="#">
-        <h4 class="project__title">Title</h4>
-        <p class="project__description">Project Description</p>
-        <footer class="project__footer">
-          <img class="demo__logo" src="#" alt="#">
-          <button class="demo">Demo</button>
-          <img class="github__logo" src="#" alt="#">
-          <button class="github">Github</button>
-        </footer>
-      </section>
-      <section class="project">
-        <img class="project__logo" src="#" alt="#">
-        <h4 class="project__title">Title</h4>
-        <p class="project__description">Project Description</p>
-        <footer class="project__footer">
-          <img class="demo__logo" src="#" alt="#">
-          <button class="demo">Demo</button>
-          <img class="github__logo" src="#" alt="#">
-          <button class="github">Github</button>
-        </footer>
-      </section>
-      <section class="project">
-        <img class="project__logo" src="#" alt="#">
-        <h4 class="project__title">Title</h4>
-        <p class="project__description">Project Description</p>
-        <footer class="project__footer">
-          <img class="demo__logo" src="#" alt="#">
-          <button class="demo">Demo</button>
-          <img class="github__logo" src="#" alt="#">
-          <button class="github">Github</button>
-        </footer>
+      <section class="list">
+        <section class="project">
+          <img class="project__logo" src="#" alt="#">
+          <h4 class="project__title">Title</h4>
+          <p class="project__description">Project Description</p>
+          <footer class="project__footer">
+            <img class="demo__logo" src="#" alt="#">
+            <button class="demo">Demo</button>
+            <img class="github__logo" src="#" alt="#">
+            <button class="github">Github</button>
+          </footer>
+        </section>
+        <section class="project">
+          <img class="project__logo" src="#" alt="#">
+          <h4 class="project__title">Title</h4>
+          <p class="project__description">Project Description</p>
+          <footer class="project__footer">
+            <img class="demo__logo" src="#" alt="#">
+            <button class="demo">Demo</button>
+            <img class="github__logo" src="#" alt="#">
+            <button class="github">Github</button>
+          </footer>
+        </section>
+        <section class="project">
+          <img class="project__logo" src="#" alt="#">
+          <h4 class="project__title">Title</h4>
+          <p class="project__description">Project Description</p>
+          <footer class="project__footer">
+            <img class="demo__logo" src="#" alt="#">
+            <button class="demo">Demo</button>
+            <img class="github__logo" src="#" alt="#">
+            <button class="github">Github</button>
+          </footer>
+        </section>
+        <section class="project">
+          <img class="project__logo" src="#" alt="#">
+          <h4 class="project__title">Title</h4>
+          <p class="project__description">Project Description</p>
+          <footer class="project__footer">
+            <img class="demo__logo" src="#" alt="#">
+            <button class="demo">Demo</button>
+            <img class="github__logo" src="#" alt="#">
+            <button class="github">Github</button>
+          </footer>
+        </section>
+        <section class="project">
+          <img class="project__logo" src="#" alt="#">
+          <h4 class="project__title">Title</h4>
+          <p class="project__description">Project Description</p>
+          <footer class="project__footer">
+            <img class="demo__logo" src="#" alt="#">
+            <button class="demo">Demo</button>
+            <img class="github__logo" src="#" alt="#">
+            <button class="github">Github</button>
+          </footer>
+        </section>
+        <section class="project">
+          <img class="project__logo" src="#" alt="#">
+          <h4 class="project__title">Title</h4>
+          <p class="project__description">Project Description</p>
+          <footer class="project__footer">
+            <img class="demo__logo" src="#" alt="#">
+            <button class="demo">Demo</button>
+            <img class="github__logo" src="#" alt="#">
+            <button class="github">Github</button>
+          </footer>
+        </section>
       </section>
     </article>
   </main>
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <h3 class="contact">Contact Me</h3>
     <p class="footer__description">I’m open for new opportunities. If you have one for me we should talk!</p>
     <a href="https://www.facebook.com/pawel.kochowicz"><img class="facebook-logo" src="#" alt="facebook"></a>
