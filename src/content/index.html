@@ -27,21 +27,20 @@
 </head>
 
 <body>
-  <header class="header">
-    <img class="header__photo" src="assets/img/dsc_1377.jpg" alt="Paweł Kochowicz-author">
-    <p class="header__name">Paweł Kochowicz</p>
-    <h1 class="header__title">Hey there! 👋 My name is Paweł and I’m an aspiring Frontend developer and an offroad
-      hothead
-      :) </h1>
-    <p class="header__description">You might be interested in checking the list of <span><a class="header__description--nav"
-          href="#mySkills"> my skills</a></span>. Don’t forget
-      to have a glimpse at <span ><a class="header__description--nav" href="#projects"> my projects</a></span>. Currently I’m looking
-      for a new challenges so if you have one -
-      <span><a class="header__description--nav" href="#footer"> contact me</a></span> 😊</p>
-    <p class="header-contact"><a class="header__mail"
-        href="mailto:pawel.kochowicz@gmail.com">pawel.kochowicz@gmail.com</a></p>
-  </header>
   <main class="main">
+    <header class="header">
+      <img class="header__photo" src="/assets/img/dsc_1377.jpg" alt="Paweł Kochowicz-author">
+      <h1 class="header__title">Hey there! 👋 My name is Paweł and I’m an aspiring Frontend developer and an offroad
+        enthusiast  :) </h1>
+      <p class="header__description">You might be interested in checking the list of <span><a
+            class="header__description--nav" href="#mySkills"> my skills</a></span>. Don’t forget
+        to have a glimpse at <span><a class="header__description--nav" href="#projects"> my projects</a></span>.
+        Currently I’m looking
+        for a new challenges so if you have one -
+        <span><a class="header__description--nav" href="#footer"> contact me</a></span> 😊</p>
+      <p class="header-contact"><a class="header__mail"
+          href="mailto:pawel.kochowicz@gmail.com">pawel.kochowicz@gmail.com</a></p>
+    </header>
     <article class="mySkills" id="mySkills">
       <h2 class="mySkills__header">My skills</h2>
       <section class="know">
@@ -70,16 +69,16 @@
           <li class="knowSomething__item">Accessiility</li>
         </ul>
       </section>
-      <section class="wontKnow">
-        <h3 class="wontKnow__title">Want to learn</h3>
-        <ul class="wontKnow__list">
-          <li class="wontKnow__item">React JS</li>
-          <li class="wontKnow__item">Node.JS</li>
-          <li class="wontKnow__item">Electron</li>
-          <li class="wontKnow__item">Server side rendering</li>
-          <li class="wontKnow__item">Typescript</li>
-          <li class="wontKnow__item">Gatsby</li>
-          <li class="wontKnow__item">Websockets</li>
+      <section class="wantKnow">
+        <h3 class="wantKnow__title">Want to learn</h3>
+        <ul class="wantKnow__list">
+          <li class="wantKnow__item">React JS</li>
+          <li class="wantKnow__item">Node.JS</li>
+          <li class="wantKnow__item">Electron</li>
+          <li class="wantKnow__item">Server side rendering</li>
+          <li class="wantKnow__item">Typescript</li>
+          <li class="wantKnow__item">Gatsby</li>
+          <li class="wantKnow__item">Websockets</li>
         </ul>
       </section>
     </article>
@@ -88,7 +87,7 @@
       <p class="projects__description">I started my frontend developer path in 2019. Since then, I’ve built some
         projects.
         Here’s the list of the things I’ve done so far.</p>
-      <section class="list">
+      <div class="list">
         <section class="project">
           <img class="project__logo" src="#" alt="#">
           <h4 class="project__title">Title</h4>
@@ -155,7 +154,7 @@
             <button class="github">Github</button>
           </footer>
         </section>
-      </section>
+      </div>
     </article>
   </main>
   <footer class="footer" id="footer">

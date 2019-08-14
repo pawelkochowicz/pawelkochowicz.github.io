@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  padding: 0 10%;
+  &__description {
+    color: #52606d;
+    line-height: 36px;
+    font-weight: 300;
+    font-size: 1.25rem;
+    padding-bottom: 60px;
+    &--nav {
+      color: #0593fb;
+    }
+  }
+  &__mail {
+    color: #0593fb;
+    font-size: 1.25rem;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid #0593fb;
+    padding-bottom: 10px;
+  }
+  &__photo {
+    width: 120px;
+    height: 120px;
+    padding: 6px;
+    margin-top: 128px;
+    border-radius: 50%;
+    border: 7px solid;
+    border-color: #cbd2d9;
+  }
+  &__title {
+    font-size: 2rem;
+    color: #171f3f;
+    font-weight: 600;
+    line-height: 46px;
+  }
+}
