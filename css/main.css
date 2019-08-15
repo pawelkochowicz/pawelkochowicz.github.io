@@ -352,17 +352,59 @@ template {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr; }
+  .know__item {
+    color: #52606d;
+    font-size: 0.9rem;
+    line-height: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .know__title {
+    font-size: 1.5rem;
+    color: #171f3f;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
   .know__list {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr; }
+    grid-template-columns: 1fr 1fr;
+    list-style: none; }
+
+.know__title::before {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  top: 10.5rem;
+  background: url("../assets/img/Decoline-green.svg"); }
+
+.know__item::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  margin-right: 4px;
+  background: url("../assets/img/check-circle-green.svg"); }
 
 .knowSomething {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr; }
+  .knowSomething__item {
+    color: #52606d;
+    font-size: 0.9rem; }
+  .knowSomething__title {
+    font-size: 1.5rem;
+    color: #171f3f; }
   .knowSomething__list {
     display: -ms-grid;
     display: grid;
@@ -374,6 +416,12 @@ template {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr; }
+  .wantKnow__item {
+    color: #52606d;
+    font-size: 0.9rem; }
+  .wantKnow__title {
+    font-size: 1.5rem;
+    color: #171f3f; }
   .wantKnow__list {
     display: -ms-grid;
     display: grid;
@@ -381,7 +429,16 @@ template {
     grid-template-columns: 1fr 1fr; }
 
 .mySkills {
-  padding: 0 10%; }
+  position: relative;
+  padding: 0 10%;
+  margin-top: 9rem; }
+  .mySkills__header {
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #171f3f;
+    border-bottom: 2px solid rgba(203, 210, 217, 0.5);
+    padding-bottom: 12px;
+    margin-bottom: 9rem; }
 
 .list {
   display: -ms-grid;
