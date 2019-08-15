@@ -1,15 +1,54 @@
 .know {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  &__item {
+    color: #52606d;
+    font-size: 0.9rem;
+    line-height: 2rem;
+display: flex;
+align-items: center;
+  }
+  &__title {
+    font-size: 1.5rem;
+    color: #171f3f;
+    display: flex;
+    flex-direction: column;
+  }
   &__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    list-style: none;
   }
+}
+
+.know__title::before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    top: 10.5rem;
+    background: url("../assets/img/Decoline-green.svg")
+}
+
+.know__item::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  margin-right: 4px;
+  background: url("../assets/img/check-circle-green.svg");
 }
 
 .knowSomething {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  &__item {
+    color: #52606d;
+    font-size: 0.9rem;
+  }
+  &__title {
+    font-size: 1.5rem;
+    color: #171f3f;
+  }
   &__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -19,6 +58,14 @@
 .wantKnow {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  &__item {
+    color: #52606d;
+    font-size: 0.9rem;
+  }
+  &__title {
+    font-size: 1.5rem;
+    color: #171f3f;
+  }
   &__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -26,7 +73,17 @@
 }
 
 .mySkills {
+    position: relative;
   padding: 0 10%;
+  margin-top: 9rem;
+  &__header {
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #171f3f;
+    border-bottom: 2px solid rgba(203, 210, 217, 0.5);
+    padding-bottom: 12px;
+    margin-bottom: 9rem;
+  }
 }
 
 .list {
