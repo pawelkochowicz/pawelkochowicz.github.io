@@ -78,7 +78,7 @@
 .wantKnow {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 7rem;
+  margin: 7rem 0;
   &__item {
     color: #52606d;
     font-size: 0.9rem;
@@ -128,7 +128,4 @@
   }
 }
 
-.list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
+
