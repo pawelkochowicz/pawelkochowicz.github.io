@@ -5,14 +5,29 @@
     color: #52606d;
     font-size: 0.9rem;
     line-height: 2rem;
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
+    &::before {
+      content: "";
+      width: 18px;
+      height: 18px;
+      margin-right: 4px;
+      background: url("../assets/img/check-circle-green.svg");
+    }
   }
   &__title {
     font-size: 1.5rem;
     color: #171f3f;
     display: flex;
     flex-direction: column;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 4px;
+      top: 10.5rem;
+      background: url("../assets/img/Decoline-green.svg");
+    }
   }
   &__list {
     display: grid;
@@ -21,59 +36,86 @@ align-items: center;
   }
 }
 
-.know__title::before {
-    content: '';
-    position: absolute;
-    width: 80px;
-    height: 4px;
-    top: 10.5rem;
-    background: url("../assets/img/Decoline-green.svg")
-}
-
-.know__item::before {
-  content: "";
-  width: 18px;
-  height: 18px;
-  margin-right: 4px;
-  background: url("../assets/img/check-circle-green.svg");
-}
-
 .knowSomething {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: 7rem;
   &__item {
     color: #52606d;
     font-size: 0.9rem;
+    line-height: 2rem;
+    display: flex;
+    align-items: center;
+    &::before {
+      content: "";
+      width: 18px;
+      height: 18px;
+      margin-right: 4px;
+      background: url("../assets/img/check-circle-purple.svg");
+    }
   }
   &__title {
     font-size: 1.5rem;
     color: #171f3f;
+    display: flex;
+    flex-direction: column;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 4px;
+      top: 29.5rem;
+      background: url("../assets/img/Decoline-purple.svg");
+    }
   }
   &__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    list-style: none;
   }
 }
 
 .wantKnow {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: 7rem;
   &__item {
     color: #52606d;
     font-size: 0.9rem;
+    line-height: 2rem;
+    display: flex;
+    align-items: center;
+    &::before {
+      content: "";
+      width: 18px;
+      height: 18px;
+      margin-right: 4px;
+      background: url("../assets/img/check-circle-blue.svg");
+    }
   }
   &__title {
     font-size: 1.5rem;
     color: #171f3f;
+    display: flex;
+    flex-direction: column;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 4px;
+      top: 46.5rem;
+      background: url("../assets/img/Decoline-blue.svg");
+    }
   }
   &__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    list-style: none;
   }
 }
 
 .mySkills {
-    position: relative;
+  position: relative;
   padding: 0 10%;
   margin-top: 9rem;
   &__header {
