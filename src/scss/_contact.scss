@@ -1,4 +1,31 @@
 .footer {
   padding: 0 10%;
   background-color: #171f3f;
+  padding-bottom: 10rem;
+
+  &__mail {
+    color: #0593fb;
+    font-size: 1.25rem;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid #0593fb;
+    padding-bottom: 10px;
+  }
 }
+
+.contact {
+    position: relative;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+    line-height: 44px;
+    padding-top: 7rem;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 4px;
+        bottom: 4rem;
+        background: url("../assets/img/Decoline-lightblue.svg");
+      }
+    }

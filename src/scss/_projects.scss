@@ -2,6 +2,7 @@
   background-color: #f5f7fa;
   padding: 0 10%;
   padding-top: 5rem;
+  padding-bottom: 5rem;
   &__description {
     max-width: 700px;
     color: #52606d;
@@ -20,6 +21,7 @@
   box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
   border-radius: 8px;
   background: #fff;
+  margin: 0.75rem;
   &__footer {
     display: flex;
     flex-direction: row;
@@ -30,6 +32,14 @@
   &__logo {
     width: 40px;
     height: 40px;
+    margin: 2rem 0 1rem 2rem;
+  }
+  &__title {
+    margin-left: 2rem;
+  }
+  &__description {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
   }
 }
 .demo {
@@ -67,6 +77,6 @@
 }
 
 .list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
