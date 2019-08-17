@@ -317,7 +317,7 @@ template {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 1000px;
-  padding: 0 10%; }
+  padding: 0 12%; }
   .header__description {
     color: #52606d;
     line-height: 36px;
@@ -486,7 +486,7 @@ template {
 
 .mySkills {
   position: relative;
-  padding: 0 10%;
+  padding: 0 12%;
   margin-top: 9rem; }
   .mySkills__header {
     font-size: 1.9rem;
@@ -498,7 +498,7 @@ template {
 
 .projects {
   background-color: #f5f7fa;
-  padding: 0 10%;
+  padding: 0 12%;
   padding-top: 5rem;
   padding-bottom: 5rem; }
   .projects__description {
@@ -581,9 +581,16 @@ template {
   grid-template-columns: 1fr 1fr; }
 
 .footer {
-  padding: 0 10%;
+  padding: 0 12%;
   background-color: #171f3f;
-  padding-bottom: 10rem; }
+  padding-bottom: 4rem; }
+  .footer__description {
+    font-size: 1.25rem;
+    color: white;
+    line-height: 36px;
+    font-weight: 300;
+    max-width: 700px;
+    padding-bottom: 1rem; }
   .footer__mail {
     color: #0593fb;
     font-size: 1.25rem;
@@ -591,6 +598,10 @@ template {
     font-weight: 600;
     border-bottom: 2px solid #0593fb;
     padding-bottom: 10px; }
+  .footer__fb {
+    padding-right: 1rem; }
+  .footer__contact {
+    padding-top: 2rem; }
 
 .contact {
   position: relative;
@@ -598,7 +609,8 @@ template {
   color: white;
   font-weight: 600;
   line-height: 44px;
-  padding-top: 7rem; }
+  padding-top: 7rem;
+  margin: 0; }
   .contact::before {
     content: "";
     position: absolute;
