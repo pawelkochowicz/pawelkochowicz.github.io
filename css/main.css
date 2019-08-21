@@ -517,7 +517,8 @@ template {
           box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
   border-radius: 8px;
   background: #fff;
-  margin: 0.75rem; }
+  margin: 0.75rem;
+  list-style: none; }
   .project__footer {
     display: -webkit-box;
     display: -ms-flexbox;
