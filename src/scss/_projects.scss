@@ -36,13 +36,16 @@
   }
   &__title {
     margin-left: 2rem;
+    color: #171F3F; 
   }
   &__description {
     margin-left: 2rem;
     margin-bottom: 2rem;
+    color: #52606D;
   }
 }
 .demo {
+  text-decoration: none;
   background: none;
   border: none;
   border-right: 1px solid rgb(179, 185, 192);
@@ -60,6 +63,7 @@
   }
 }
 .github {
+  text-decoration: none;
   background: none;
   border: none;
   padding-left: 1rem;
