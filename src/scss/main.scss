@@ -9,6 +9,9 @@
 html {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  @media (max-width: 850px) {
+    font-size: 11px;
+  }
 }
 
 *,
@@ -20,6 +23,9 @@ html {
 body {
   background: #ffffff;
   border: 16px solid #171f3f;
+  @media (max-width: 850px) {
+    border: none;
+  }
 }
 
 a:hover {

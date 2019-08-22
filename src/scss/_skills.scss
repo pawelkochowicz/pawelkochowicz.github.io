@@ -1,6 +1,9 @@
 .know {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  @media (max-width: 850px) {
+    grid-template-columns: 1fr;
+  }
   &__item {
     color: #52606d;
     display: flex;
@@ -19,8 +22,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     list-style: none;
+    @media (max-width: 1220px) {
+      grid-template-columns: 1fr;
+    }
   }
   &__title {
+    position: relative;
     color: #171f3f;
     display: flex;
     font-size: 1.5rem;
@@ -30,7 +37,7 @@
       background: url("../assets/img/Decoline-green.svg");
       position: absolute;
       height: 4px;
-      top: 10.5rem;
+      top: -2rem;
       width: 80px;
     }
   }
@@ -40,6 +47,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 7rem;
+  @media (max-width: 850px) {
+    grid-template-columns: 1fr;
+  }
   &__item {
     display: flex;
     align-items: center;
@@ -58,9 +68,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     list-style: none;
+    @media (max-width: 1220px) {
+      grid-template-columns: 1fr;
+    }
   }
   &__title {
     color: #171f3f;
+    position: relative;
     display: flex;
     font-size: 1.5rem;
     flex-direction: column;
@@ -69,8 +83,8 @@
       background: url("../assets/img/Decoline-purple.svg");
       position: absolute;
       height: 4px;
-      top: 29.5rem;
-      width: 80px;
+      top: -2rem;
+      width: 80px;    
     }
   }
 }
@@ -79,6 +93,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 7rem 0;
+  @media (max-width: 850px) {
+    grid-template-columns: 1fr;
+  }
   &__item {
     display: flex;
     align-items: center;
@@ -97,9 +114,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     list-style: none;
+    @media (max-width: 1220px) {
+      grid-template-columns: 1fr;
+    }
   }
   &__title {
     color: #171f3f;
+    position: relative;
     display: flex;
     font-size: 1.5rem;
     flex-direction: column;
@@ -108,7 +129,7 @@
       background: url("../assets/img/Decoline-blue.svg");
       height: 4px;
       position: absolute;
-      top: 46.5rem;
+      top: -2rem;
       width: 80px;
     }
   }
