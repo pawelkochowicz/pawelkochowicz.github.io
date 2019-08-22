@@ -1,45 +1,45 @@
 .footer {
-  padding: 0 12%;
   background-color: #171f3f;
+  padding: 0 12%;
   padding-bottom: 4rem;
-  &__description {
-      font-size: 1.25rem;
-      color: white;
-      line-height: 36px;
-      font-weight: 300;
-      max-width: 700px;
-      padding-bottom: 1rem;
+  &__contact {
+    padding-top: 2rem;
   }
-  &__mail {
-    color: #0593fb;
+  &__description {
+    color: white;
     font-size: 1.25rem;
-    text-decoration: none;
-    font-weight: 600;
-    border-bottom: 2px solid #0593fb;
-    padding-bottom: 10px;
+    font-weight: 300;
+    line-height: 36px;
+    max-width: 700px;
+    padding-bottom: 1rem;
   }
   &__fb {
-      padding-right: 1rem;
+    padding-right: 1rem;
   }
-  &__contact {
-      padding-top: 2rem;
+  &__mail {
+    border-bottom: 2px solid #0593fb;
+    color: #0593fb;
+    font-size: 1.25rem;
+    padding-bottom: 10px;
+    font-weight: 600;
+    text-decoration: none;
   }
 }
 
 .contact {
-    position: relative;
-    font-size: 1.5rem;
-    color: white;
-    font-weight: 600;
-    line-height: 44px;
-    padding-top: 7rem;
-    margin: 0;
-    &::before {
-        content: "";
-        position: absolute;
-        width: 80px;
-        height: 4px;
-        bottom: 4rem;
-        background: url("../assets/img/decoline-lightblue.svg");
-      }
-    }
+  color: white;
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 44px;
+  margin: 0;
+  padding-top: 7rem;
+  &::before {
+    content: "";
+    background: url("../assets/img/decoline-lightblue.svg");
+    bottom: 4rem;
+    height: 4px;
+    position: absolute;
+    width: 80px;
+  }
+}

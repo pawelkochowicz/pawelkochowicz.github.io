@@ -3,36 +3,36 @@
   grid-template-columns: 1fr 1fr;
   &__item {
     color: #52606d;
-    font-size: 0.9rem;
-    line-height: 2rem;
     display: flex;
     align-items: center;
+    font-size: 0.9rem;
+    line-height: 2rem;
     &::before {
       content: "";
-      width: 18px;
+      background: url("../assets/img/check-circle-green.svg");
       height: 18px;
       margin-right: 4px;
-      background: url("../assets/img/check-circle-green.svg");
-    }
-  }
-  &__title {
-    font-size: 1.5rem;
-    color: #171f3f;
-    display: flex;
-    flex-direction: column;
-    &::before {
-      content: "";
-      position: absolute;
-      width: 80px;
-      height: 4px;
-      top: 10.5rem;
-      background: url("../assets/img/Decoline-green.svg");
+      width: 18px;
     }
   }
   &__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     list-style: none;
+  }
+  &__title {
+    color: #171f3f;
+    display: flex;
+    font-size: 1.5rem;
+    flex-direction: column;
+    &::before {
+      content: "";
+      background: url("../assets/img/Decoline-green.svg");
+      position: absolute;
+      height: 4px;
+      top: 10.5rem;
+      width: 80px;
+    }
   }
 }
 
@@ -41,37 +41,37 @@
   grid-template-columns: 1fr 1fr;
   margin-top: 7rem;
   &__item {
+    display: flex;
+    align-items: center;
     color: #52606d;
     font-size: 0.9rem;
     line-height: 2rem;
-    display: flex;
-    align-items: center;
     &::before {
       content: "";
-      width: 18px;
+      background: url("../assets/img/check-circle-purple.svg");
       height: 18px;
       margin-right: 4px;
-      background: url("../assets/img/check-circle-purple.svg");
-    }
-  }
-  &__title {
-    font-size: 1.5rem;
-    color: #171f3f;
-    display: flex;
-    flex-direction: column;
-    &::before {
-      content: "";
-      position: absolute;
-      width: 80px;
-      height: 4px;
-      top: 29.5rem;
-      background: url("../assets/img/Decoline-purple.svg");
+      width: 18px;
     }
   }
   &__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     list-style: none;
+  }
+  &__title {
+    color: #171f3f;
+    display: flex;
+    font-size: 1.5rem;
+    flex-direction: column;
+    &::before {
+      content: "";
+      background: url("../assets/img/Decoline-purple.svg");
+      position: absolute;
+      height: 4px;
+      top: 29.5rem;
+      width: 80px;
+    }
   }
 }
 
@@ -80,31 +80,17 @@
   grid-template-columns: 1fr 1fr;
   margin: 7rem 0;
   &__item {
+    display: flex;
+    align-items: center;
     color: #52606d;
     font-size: 0.9rem;
     line-height: 2rem;
-    display: flex;
-    align-items: center;
     &::before {
       content: "";
-      width: 18px;
+      background: url("../assets/img/check-circle-blue.svg");
       height: 18px;
       margin-right: 4px;
-      background: url("../assets/img/check-circle-blue.svg");
-    }
-  }
-  &__title {
-    font-size: 1.5rem;
-    color: #171f3f;
-    display: flex;
-    flex-direction: column;
-    &::before {
-      content: "";
-      position: absolute;
-      width: 80px;
-      height: 4px;
-      top: 46.5rem;
-      background: url("../assets/img/Decoline-blue.svg");
+      width: 18px;
     }
   }
   &__list {
@@ -112,20 +98,32 @@
     grid-template-columns: 1fr 1fr;
     list-style: none;
   }
-}
-
-.mySkills {
-  position: relative;
-  padding: 0 12%;
-  margin-top: 9rem;
-  &__header {
-    font-size: 1.9rem;
-    font-weight: 600;
+  &__title {
     color: #171f3f;
-    border-bottom: 2px solid rgba(203, 210, 217, 0.5);
-    padding-bottom: 12px;
-    margin-bottom: 9rem;
+    display: flex;
+    font-size: 1.5rem;
+    flex-direction: column;
+    &::before {
+      content: "";
+      background: url("../assets/img/Decoline-blue.svg");
+      height: 4px;
+      position: absolute;
+      top: 46.5rem;
+      width: 80px;
+    }
   }
 }
 
-
+.mySkills {
+  margin-top: 9rem;
+  position: relative;
+  padding: 0 12%;
+  &__header {
+    border-bottom: 2px solid rgba(203, 210, 217, 0.5);
+    color: #171f3f;
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin-bottom: 9rem;
+    padding-bottom: 12px;
+  }
+}
