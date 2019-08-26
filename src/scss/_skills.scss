@@ -8,8 +8,7 @@
     color: #52606d;
     display: flex;
     align-items: center;
-    font-size: 0.9rem;
-    line-height: 2rem;
+      line-height: 2rem;
     &::before {
       content: "";
       background: url("../assets/img/check-circle-green.svg");
@@ -21,9 +20,13 @@
   &__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    list-style: none;
+    list-style-type: none;
     @media (max-width: 1220px) {
       grid-template-columns: 1fr;
+    }
+    @media (max-width: 850px) {
+      list-style: none;
+      padding: 0;
     }
   }
   &__title {
@@ -54,7 +57,6 @@
     display: flex;
     align-items: center;
     color: #52606d;
-    font-size: 0.9rem;
     line-height: 2rem;
     &::before {
       content: "";
@@ -71,6 +73,10 @@
     @media (max-width: 1220px) {
       grid-template-columns: 1fr;
     }
+    @media (max-width: 850px) {
+      list-style: none;
+      padding: 0;
+    }
   }
   &__title {
     color: #171f3f;
@@ -84,7 +90,7 @@
       position: absolute;
       height: 4px;
       top: -2rem;
-      width: 80px;    
+      width: 80px;
     }
   }
 }
@@ -100,7 +106,6 @@
     display: flex;
     align-items: center;
     color: #52606d;
-    font-size: 0.9rem;
     line-height: 2rem;
     &::before {
       content: "";
@@ -116,6 +121,10 @@
     list-style: none;
     @media (max-width: 1220px) {
       grid-template-columns: 1fr;
+    }
+    @media (max-width: 850px) {
+      list-style: none;
+      padding: 0;
     }
   }
   &__title {
@@ -146,5 +155,8 @@
     font-weight: 600;
     margin-bottom: 9rem;
     padding-bottom: 12px;
+    @media (max-width: 850px) {
+      text-align: center;
+    }
   }
 }

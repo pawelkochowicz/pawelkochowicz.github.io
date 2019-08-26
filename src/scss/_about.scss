@@ -29,6 +29,10 @@
     margin-top: 128px;
     padding: 6px;
     width: 120px;
+    @media (max-width: 850px) {
+      margin-top: 6rem;
+      margin-bottom: 1rem;
+    }
   }
   &__title {
     color: #171f3f;

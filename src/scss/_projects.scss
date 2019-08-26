@@ -1,9 +1,14 @@
 .list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  @media (max-width:1000px) {
+  @media (max-width: 1000px) {
     grid-template-columns: 1fr;
   }
+  @media (max-width: 850px) {
+    list-style: none;
+    padding: 0;
+  }
+
 }
 
 .projects {
@@ -11,17 +16,24 @@
   padding: 0 12%;
   padding-top: 5rem;
   padding-bottom: 5rem;
+
   &__description {
     color: #52606d;
     font-weight: 300;
     font-size: 1.25rem;
     line-height: 36px;
     max-width: 700px;
+    @media (max-width: 850px) {
+      text-align: center;
+    }
   }
   &__header {
     color: #171f3f;
     font-size: 1.9rem;
     font-weight: 600;
+    @media (max-width: 850px) {
+      text-align: center;
+    }
   }
 }
 
@@ -31,6 +43,8 @@
   border-radius: 8px;
   list-style: none;
   margin: 0.75rem;
+  
+
   &__description {
     margin-left: 2rem;
     margin-bottom: 2rem;
@@ -55,10 +69,17 @@
         height: 24px;
         padding-right: 25px;
         width: 24px;
+        background-size: contain;
+        background-repeat: no-repeat;   
+        @media (max-width: 850px) {
+          padding-right: 18px; 
+                 }
+           
       }
       &:hover {
         transform: scale(1.05);
       }
+      
     }
     &--github {
       background: none;
@@ -72,6 +93,12 @@
         height: 24px;
         padding-right: 25px;
         width: 24px;
+        background-size: contain;
+        background-repeat: no-repeat;    
+        @media (max-width: 850px) {
+padding-right: 18px; 
+       }
+    
       }
       &:hover {
         transform: scale(1.05);
